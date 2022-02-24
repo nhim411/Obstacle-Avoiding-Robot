@@ -1,0 +1,123 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC18F4520
+CCSVerions=5.015
+Compiler=PCH
+CCSVersion=5.051
+Development_Mode=
+ToolSuite=CCS
+[Target Data]
+FileList=main.c
+BuildTool=C-COMPILER
+OptionString=+FM
+AdditionalOptionString=
+BuildRequired=1
+[Directories]
+Include=D:\PICC\Devices\;C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\;C:\Users\vohoa\Desktop\test_motor\test_motor\;D:\PICC\Drivers\
+Library=
+LinkerScript=
+[C:\Users\KA\Desktop\RTS\test_motor\main]
+Type=4
+[mru-list]
+1=main.c
+[Opened Files]
+1=main.c
+2=main.h
+3=lcd.h
+4=D:\PICC\Devices\16F877A.h
+5=
+t1=109
+Count=1
+t2=1
+[main.c]
+Type=4
+Path=
+FileList=
+BuildTool=
+OptionString=
+AdditionalOptionString=
+[defines]
+enabled=0
+chip=1
+D1=
+V1=
+buildcount=38
+[fileformats]
+forcecoff=1
+debug=4
+error=2
+object=0
+list=0
+scratch=0
+sta=1
+tre=1
+allerrors=1
+allwarnings=1
+stayupne=3
+stayupoe=0
+[Windows]
+0=0000 %S 0 0 796 451 3 0
+[CompilerVersion]
+Fixed=
+
+[ProjectLog]
+Days=2
+D1=25-06-2020
+D1_L=25
+D1_L1=[58331]Project Opened.
+D1_L2=[58412]Project Closed.
+D1_L3=[65691]Project Opened.
+D1_L4=[66052]Project Closed.
+D1_L5=[66169]Project Opened.
+D1_L6=[66216]Started Editing.
+D1_L7=[66894]Stopped Editing.
+D1_L8=[67781]Started Editing.
+D1_L9=[68124]Stopped Editing.
+D1_L10=[71755]Started Editing.
+D1_L11=[72619]Stopped Editing.
+D1_L12=[72640]Started Editing.
+D1_L13=[72944]Stopped Editing.
+D1_L14=[73628]Started Editing.
+D1_L15=[74203]Stopped Editing.
+D1_L16=[77107]Started Editing.
+D1_L17=[77407]Stopped Editing.
+D1_L18=[79725]Started Editing.
+D1_L19=[80064]Stopped Editing.
+D1_L20=[80714]Started Editing.
+D1_L21=[81022]Stopped Editing.
+D1_L22=[81540]Started Editing.
+D1_L23=[82227]Stopped Editing.
+D1_L24=[85250]Started Editing.
+D1_L25=[85550]Stopped Editing.
+D2=26-06-2020
+D2_L=23
+D2_L1=[486]Started Editing.
+D2_L2=[795]Stopped Editing.
+D2_L3=[1003]Started Editing.
+D2_L4=[1005]Stopped Editing.
+TotalEdit=73
+TotalDebug=0
+D2_E=73
+D2_D=0
+D2_L5=[1005]Project Closed.
+D2_L6=[1901]Project Opened.
+D2_L7=[4787]Started Editing.
+D2_L8=[6500]Stopped Editing.
+D2_L9=[6500]Project Closed.
+D2_L10=[20798]Project Opened.
+D2_L11=[20857]Started Editing.
+D2_L12=[21639]Stopped Editing.
+D2_L13=[22837]Started Editing.
+D2_L14=[23144]Stopped Editing.
+D2_L15=[27094]Started Editing.
+D2_L16=[27396]Stopped Editing.
+D2_L17=[27501]Started Editing.
+D2_L18=[27801]Stopped Editing.
+D2_L19=[27979]Started Editing.
+D2_L20=[28638]Stopped Editing.
+D2_L21=[32933]Started Editing.
+D2_L22=[33253]Stopped Editing.
+D2_L23=[42286]Project Closed.
+[Units]
+Count=1
+1=main (main)

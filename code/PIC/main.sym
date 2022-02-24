@@ -1,0 +1,1696 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017     @INTERRUPT_AREA
+018     @INTERRUPT_AREA
+019-01A strtok.save
+01B-01E _Randseed
+01F-022 Kp
+023-026 Ki
+027-02A Kd
+02B-02E Tp
+02F-032 Ti
+033-036 Td
+037-046 error_history
+047     queue_pos
+048     temp_pos
+049-04A prev_ave
+04B-04C cur_ave
+04D-04E error
+04F-050 DeDt
+051-054 error_sum
+055-056 desired_power
+057-058 power
+059-05A setpoint
+05B-05E temp_float
+05F-060 left_speed
+061-062 right_speed
+063.0   turn_left
+063.1   turn_right
+063.2   temp_finish
+063.3   button_left
+063.4   button_right
+063.5   sensor_bot
+063.6   status
+063.7   start
+064     temp_delay
+065     zone
+066-067 EN1
+068-069 EN2
+06A-06B stt
+06C-06D i
+06E-06F stt1
+070-071 yaw
+072-078 arr
+079     j
+07A     @CURRENT_TASK
+07B-081 @TASKINFO1_2_2_0_0
+082-088 @TASKINFO2_2_2_0_0
+089-08F @TASKINFO3_2_2_0_0
+090-096 @TASKINFO4_2_2_0_0
+097-09D @TASKINFO5_2_2_0_0
+09E-0A4 @TASKINFO6_2_2_0_0
+0A5-0AB @TASKINFO7_2_2_0_0
+0AC-0B2 @TASKINFO8_2_2_0_0
+0B3-0B9 @TASKINFO9_2_2_0_0
+0BA     MAIN.@SCRATCH1
+0BB     DC1.@SCRATCH1
+0BC     DC2.@SCRATCH1
+0BD     @PRINTF_D_9600_31766_31767.P1
+0BE     @PRINTF_D_9600_31766_31767.P1
+0BF     @PRINTF_D_9600_31766_31767.@SCRATCH1
+0C0     @PRINTF_D_9600_31766_31767.@SCRATCH2
+0C1     @PRINTF_D_9600_31766_31767.@SCRATCH3
+0C2     @PRINTF_D_9600_31766_31767.@SCRATCH4
+0C3     @DIV88.P1
+0C4     @DIV88.P1
+0C5     @DIV88.@SCRATCH1
+0C6     zone_dectected.@SCRATCH1
+0C7     zone_dectected.@SCRATCH2
+0C8     @delay_ms1.P1
+0C8-0CB @SDTOF.P2
+0C8     pid_compute.@SCRATCH1
+0C9     pid_compute.@SCRATCH2
+0CA     pid_compute.@SCRATCH3
+0CB     pid_compute.@SCRATCH4
+0CC-0CD @SITOF.P1
+0CC     @SDTOF.@SCRATCH1
+0DC-0DD @ITOF.P1
+0DC-0DF @MULFF.P2
+0DC-0DF @SFTOI.P3
+0DC     control.@SCRATCH1
+0DD     control.@SCRATCH2
+0DE     control.@SCRATCH3
+0DF     control.@SCRATCH4
+0E0-0E3 @ADDFF.P1
+0E0-0E3 @MULFF.P2
+0E4-0E7 @ADDFF.P1
+0E4     @MULFF.@SCRATCH1
+0E5     @MULFF.@SCRATCH2
+0E6     @MULFF.@SCRATCH3
+0E8     @ADDFF.@SCRATCH1
+0E9     @ADDFF.@SCRATCH2
+0EA     @ADDFF.@SCRATCH3
+0EB     @ADDFF.@SCRATCH4
+0EC     @ADDFF.@SCRATCH5
+0ED     @ADDFF.@SCRATCH6
+0EE     @ADDFF.@SCRATCH7
+0EF     @ADDFF.@SCRATCH8
+0F0     button.@SCRATCH1
+0F1     RDA_isr.c
+0F2-0F3 @PRINTF_LD_9600_31766_31767.P1
+0F2-0F3 atol.s
+0F2     @PSTRINGCN_9600_31766_31767.P1
+0F2     RDA_isr.@SCRATCH1
+0F3     RDA_isr.@SCRATCH2
+0F3     @PSTRINGCN_9600_31766_31767.@SCRATCH1
+0F4-0F5 atol.result
+0F4     @PSTRINGCN_9600_31766_31767.@SCRATCH2
+0F4     @PRINTF_LD_9600_31766_31767.@SCRATCH1
+0F5     @PRINTF_LD_9600_31766_31767.@SCRATCH2
+0F6     atol.sign
+0F6     @PRINTF_LD_9600_31766_31767.@SCRATCH3
+0F7     atol.base
+0F7     @PRINTF_LD_9600_31766_31767.@SCRATCH4
+0F8     atol.index
+0F8     @PRINTF_LD_9600_31766_31767.@SCRATCH5
+0F9     atol.c
+0F9     @PRINTF_LD_9600_31766_31767.@SCRATCH6
+0FA-0FB @MULS1616.P1
+0FA     atol.@SCRATCH1
+0FA     @PRINTF_LD_9600_31766_31767.@SCRATCH7
+0FB     atol.@SCRATCH2
+0FC-0FD @MULS1616.P1
+0FC     atol.@SCRATCH3
+0FE     @MULS1616.@SCRATCH1
+0FF     @MULS1616.@SCRATCH2
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0000AE  @const983.call
+0000D0  @MULS1616
+000122  atol
+000300  @PSTRINGCN_9600_31766_31767
+000322  @PRINTF_LD_9600_31766_31767
+000408  RDA_isr
+00047C  @const943.call
+00048E  live
+00049E  DC1
+0004E6  DC2
+00052E  @DIV88
+000556  @PRINTF_D_9600_31766_31767
+00060A  uart_use
+000630  zone_dectected
+000682  @SITOF
+0006CA  @MULFF
+0007BC  @SDTOF
+000814  @ADDFF
+000A7E  @SFTOI
+000AB6  @delay_ms1
+000ADE  pid_compute
+000D5A  @ITOF
+000D90  control
+000FA0  finish
+000FC0  button
+000FDC  @cinit1
+000FDC  MAIN
+001046  @cinit2
+0136  StrtoulGO
+0136  StrtolGO
+
+Project Directory:
+    E:\Users\Nam\Desktop\FINAL\PIC\
+
+Project Files:
+    main.c                                                  [26-Jun-20 07:52  CRC=9B654851]
+    main.h                                                  [25-Jun-20 18:30  CRC=2EB8624F]
+    C:\Program Files (x86)\PICC\Devices\18F4520.h           [22-Oct-15 10:31  CRC=82A02265]
+    C:\Program Files (x86)\PICC\Drivers\stdio.h             [31-Jul-07 14:24  CRC=4E4534F4]
+    C:\Program Files (x86)\PICC\Drivers\string.h            [26-Mar-15 12:34  CRC=C4814297]
+    C:\Program Files (x86)\PICC\Drivers\stddef.h            [05-Sep-14 11:47  CRC=897CEC6C]
+    C:\Program Files (x86)\PICC\Drivers\ctype.h             [03-Jan-08 14:55  CRC=2D1F019F]
+    C:\Program Files (x86)\PICC\Drivers\stdlib.h            [07-Dec-14 17:58  CRC=07F0FCBD]
+
+Source signature=26022C15
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=007E
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC18F4520
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Task Info:
+    Ticks: 100 ns
+    Cycle: 10 ms
+
+Tasks:
+    live
+    DC1
+    DC2
+    uart_use
+    zone_dectected
+    pid_compute
+    control
+    finish
+    button
+
+Task Schedule:
+       1 ms  950:live
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  956:uart_use
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  977:finish
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+       1 ms  950:live
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  956:uart_use
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+       1 ms  950:live
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  956:uart_use
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+       1 ms  950:live
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  956:uart_use
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+       1 ms  950:live
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  956:uart_use
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+       1 ms  950:live
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  956:uart_use
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+       1 ms  950:live
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  956:uart_use
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+       1 ms  950:live
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  956:uart_use
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+       1 ms  950:live
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  956:uart_use
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+       1 ms  950:live
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  956:uart_use
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+       1 ms  950:live
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  956:uart_use
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+       1 ms  950:live
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  956:uart_use
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+       1 ms  950:live
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  956:uart_use
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+       1 ms  950:live
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  956:uart_use
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+       1 ms  950:live
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  956:uart_use
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+       1 ms  950:live
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  956:uart_use
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+       1 ms  950:live
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  956:uart_use
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+       1 ms  950:live
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  956:uart_use
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+       1 ms  950:live
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  956:uart_use
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+       1 ms  950:live
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  956:uart_use
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+      10 ms  952:DC1
+      10 ms  954:DC2
+      10 ms  965:zone_dectected
+      10 ms  967:pid_compute
+      10 ms  975:control
+      10 ms  979:button
+    Sync to next 10 ms
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX32:      main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA
